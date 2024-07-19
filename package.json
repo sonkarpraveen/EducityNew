@@ -6,7 +6,9 @@
  "type": "module",
  "scripts": {
   "dev": "vite",
-  "build": "npm run build",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy":"gh-pages -d build",
   "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
  },
  "dependencies": {
